@@ -1,14 +1,14 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTML
-%define		_subclass	QuickForm_Controller
+%define		_subclass	QuickForm
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	%{_class}_%{_subclass}_Controller
 
 Summary:	%{_pearname} - add-on to HTML_QuickForm that allows building of multiple forms 
 Summary(pl):	%{_pearname} - dodatek do HTML_QuickForm umo¿liwiaj±cy budowanie wielu formularzy
 Name:		php-pear-%{_pearname}
 Version:	1.0.2
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -60,10 +60,10 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Action
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Action
 
-install %{_pearname}-%{version}/*.php 		$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-install %{_pearname}-%{version}/Action/*.php 	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/Action
+install %{_pearname}-%{version}/*.php		$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install %{_pearname}-%{version}/Action/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Action
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -71,4 +71,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/examples
-%{php_pear_dir}/%{_class}/*
+%{php_pear_dir}/%{_class}/%{_subclass}
