@@ -15,7 +15,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	06cadeca9a7abe41c0af86ba713bd381
 URL:		http://pear.php.net/package/HTML_QuickForm_Controller/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-Requires:	php-pear
+Requires:	php-pear >= 4:1.0-9.1
 Requires:	php-pear-HTML_QuickForm >= 3.2.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -72,4 +72,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %doc docs/%{_pearname}/examples
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/%{_subclass}
+%{php_pear_dir}/%{_class}/%{_subclass}/*
