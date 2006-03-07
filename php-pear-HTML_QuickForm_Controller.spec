@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	bbc1627d8fddc51eda0974904229c9c6
 URL:		http://pear.php.net/package/HTML_QuickForm_Controller/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear >= 4:1.0-9.1
 Requires:	php-pear-HTML_QuickForm >= 3.2.5
