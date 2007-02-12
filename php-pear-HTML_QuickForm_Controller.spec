@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Controller
 
 Summary:	%{_pearname} - add-on to HTML_QuickForm that allows building of multiple forms
-Summary(pl):	%{_pearname} - dodatek do HTML_QuickForm umo¿liwiaj±cy budowanie wielu formularzy
+Summary(pl.UTF-8):   %{_pearname} - dodatek do HTML_QuickForm umoÅ¼liwiajÄ…cy budowanie wielu formularzy
 Name:		php-pear-%{_pearname}
 Version:	1.0.7
 Release:	1
@@ -41,20 +41,20 @@ Cool features:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet jest implementacj± szablonu PageController.
+%description -l pl.UTF-8
+Ten pakiet jest implementacjÄ… szablonu PageController.
 
 Architektura:
-- Klasa Controller badaj±ca zapytania HTTP i zarz±dzaj±ca warto¶ciami
-  formularza pomiêdzy kolejnymi zapytaniami.
-- Klasa Page (podklasa QuickForm) reprezentuj±ca pojedyncz± stronê
+- Klasa Controller badajÄ…ca zapytania HTTP i zarzÄ…dzajÄ…ca wartoÅ›ciami
+  formularza pomiÄ™dzy kolejnymi zapytaniami.
+- Klasa Page (podklasa QuickForm) reprezentujÄ…ca pojedynczÄ… stronÄ™
   formularza.
 - Logika biznesowa zawarta jest w podklasach klasy Action.
 
 Ciekawe cechy:
-- Zawiera kilka domy¶lnych akcji pozwalaj±cych na ³atwe budowanie
+- Zawiera kilka domyÅ›lnych akcji pozwalajÄ…cych na Å‚atwe budowanie
   formularzy rozbitych na kilka stron.
-- Zawiera gotowe przyk³ady najczê¶ciej spotykanych zastosowañ.
+- Zawiera gotowe przykÅ‚ady najczÄ™Å›ciej spotykanych zastosowaÅ„.
 
 Ta klasa ma w PEAR status: %{_status}.
 
