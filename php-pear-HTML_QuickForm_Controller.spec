@@ -8,7 +8,7 @@ Summary:	%{_pearname} - add-on to HTML_QuickForm that allows building of multipl
 Summary(pl.UTF-8):	%{_pearname} - dodatek do HTML_QuickForm umożliwiający budowanie wielu formularzy
 Name:		php-pear-%{_pearname}
 Version:	1.0.8
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
