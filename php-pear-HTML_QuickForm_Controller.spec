@@ -3,18 +3,17 @@
 %define		_subclass	QuickForm
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}_Controller
-
 Summary:	%{_pearname} - add-on to HTML_QuickForm that allows building of multiple forms
 Summary(pl.UTF-8):	%{_pearname} - dodatek do HTML_QuickForm umożliwiający budowanie wielu formularzy
 Name:		php-pear-%{_pearname}
 Version:	1.0.10
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	9d220655d03233bceea387f0e75ba2fd
 URL:		http://pear.php.net/package/HTML_QuickForm_Controller/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.5.4
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear >= 4:1.0-9.1
